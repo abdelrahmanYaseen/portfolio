@@ -4,13 +4,22 @@ export const homeObj1 = {
     lightText: false,
     lightTextDesc: false,
     topLine: 'A bit about me',
-    headLine: 'Passion is my main driver',
+    headLine: 'Jack of all trades, master of some.',
     description: <p>I'm Yaseen, a former valedictorian
-     who lived in 7 countries and is passionate about <b>Digital Project Management</b>, 
-     <b>Blockchain</b>, <b>Supply Chain</b>, <b>Finance</b>, <b>Graphics</b>,
-     <b>Optimization</b> and <b>Machine Learning</b>.
-     <p style={{'margin-top':'10px'}}>I like to create, innovate and invest my money, time and effort in making sure 
+     who lived in 7 countries and I'm <em>very</em> passionate about:
+     <ul style={{'padding-left':'20px'}}>
+        <li>Digital Project Management</li>
+        <li>Blockchain</li>
+        <li>Supply Chain</li>
+        <li>Finance</li>
+        <li>Graphics</li>
+        <li>Optimization</li>
+        <li>Machine Learning</li>
+    </ul>
+     <p style={{'margin-top':'10px'}}>I like to create, innovate and invest my time, effort and money in making sure 
      that technology's potential is being realized.</p>
+     <p>My intrests extend far beyond the technical aspects of technology to
+      expand Computer Ethics, and both the psychological and economical effects of technology. </p>
      </p>,
     // description: <p>I'm Yaseen, a former valedictorian of the Computer Engineering department <a style={{'color': '#01bf71'}} href="https://www.metu.edu.tr/" target="_blank">@METU</a>. Extremely passionate about technology and computing.<p>Currently I'm doing my Master's degree in Computer Science and Engineering <a style={{'color': '#01bf71'}} href="https://www.polimi.it/" >@Polimi</a></p></p>,
     buttonLabel: 'Full Experience Timeline',
@@ -35,5 +44,5 @@ export const homeObj2 = {
     alt:'test alt',
     dark:true,
     primary: true,
-    darkText: false
+    darkText: false,
 };

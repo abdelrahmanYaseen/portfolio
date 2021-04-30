@@ -81,7 +81,6 @@ export const Subtitle = styled.p`
     max-width: 440px;
     margin-bottom: 35px;
     text-align: justify;
-    letter-spacing: 0.5px;
     font-size: 18px;
     line-height: normal;
     color: ${({darkText}) => (darkText)? '#010606':'#fff'};
