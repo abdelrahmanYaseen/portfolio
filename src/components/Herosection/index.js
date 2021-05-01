@@ -9,8 +9,8 @@ const HeroSection = () => {
                 <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
             </HeroBg>
             <HeroContent>
-                <HeroH1> This is just a demo for habibti ! </HeroH1>
-                <HeroP> Marhaba :P </HeroP>
+                <HeroH1> Howdy !  </HeroH1>
+                <HeroP> Welcome to my portfolio :) </HeroP>
             </HeroContent>
         </HeroContainer>
     )

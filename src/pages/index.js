@@ -23,8 +23,8 @@ const Home = () => {
             <HeroSection/>
             <InfoSection {...homeObj1}/>
             <Timeline/>
-            <InfoSection {...homeObj2}/>
             <Projects/>
+            <InfoSection {...homeObj2}/>
             {/* <FancyCard/> */}
             <Footer/>
 

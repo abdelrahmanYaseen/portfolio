@@ -10,23 +10,22 @@ import {
 
 import "react-vertical-timeline-component/style.min.css";
 
-import { FaBorderNone } from "react-icons/fa";
 
 const Timeline = () => {
     let workIconStyles = { background: "#ddd" };
     let schoolIconStyles = { background: "#01bf71" };
 
     return (
-        <div style={{'margin-top':'0', 'background':'#000'}}>
-           <h1 className="title">Timeline</h1>
+        <div id='experienceTimeLine' style={{'margin-top':'0', 'background':'#f9f9f9'}}>
+           {/* <h1 className="title">Timeline</h1> */}
             <VerticalTimeline>
                 {timelineElements.map((element) => {
                 let isCustomIcon = ! (element.icon === 'work' || element.icon === 'school');
-                let icon = <img 
-                            style= {{'width':'45px','margin-left':'15%', 'margin-top':'15%'}} 
-                            src={element.icon} />
+                let icon = <a href= {element.link} target='blank'  rel='noopener noreferrer' ><img 
+                            style= {{'height':'100%', 'width':'100%', 'padding':'10px', 'ustifyContent':'center'}} 
+                            src={element.icon} /></a>
                 
-                let customIconStyle = isCustomIcon? { background: element.bgcolor } : '';
+                let customIconStyle = isCustomIcon? { background: element.bgcolor, ustifyContent:'center', alignItems:'center' } : '';
                 
                 let isWorkIcon = element.icon === "work";
                 let showButton =

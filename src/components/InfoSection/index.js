@@ -4,7 +4,7 @@ import { InfoWrapper, BtnWrap, Column2, Heading,Img,InfoContainer,Column1, InfoR
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
-const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headLine, darkText, description, buttonLabel,img, alt,primary, dark}) => {
+const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headLine, darkText, description, buttonLabel,btnLink ,img, alt,primary, dark}) => {
     
     useEffect(()=> {
         Aos.init({duration: 1000});
@@ -22,7 +22,7 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headLine, darkT
                              <Subtitle darkText={darkText}>{description}</Subtitle>
                              <BtnWrap>
                                  <Button
-                                    to="home"
+                                    to={btnLink}
                                     smooth = {true}
                                     duration = {500}
                                     spy={true}

@@ -11,11 +11,14 @@
 }
 .vertical-timeline-element-content {
   border-style: solid !important;
-  border-radius: 5px;
-  border-color: #01bf71 !important;;
+  border-radius: 20px !important;
+  border-width: 1px !important;
+  border-color: #01bf71 !important;
   padding: 2em 3em !important;
+  box-shadow:  0px 0px 5px 2px #ddd !important;
 }
 
 .date {
-  color: #fff;
+  font-weight: 600 !important;
+  color: #01bf71 !important;
 }
