@@ -41,11 +41,11 @@ let timelineElements = [
       title: "Data Analyst",
       location: "Parabol Yazilim - Ankara/Turkey",
       description:
-          <p>Worked with brillient people on the problem of Traffic
+          <div><p>Worked with brillient people on the problem of Traffic
            Lights Optimization, where given a huge dataset of the
             traffic density in Konya (a city in Turkey) we were
              working on finding the optimal traffic lights timing 
-             that will minimize traffic jams<p>R and Python languages were used</p></p>,
+             that will minimize traffic jams</p><p>R and Python languages were used</p></div>,
       buttonText: "",
       date: "August 2019 - November 2019",
       icon: require('../../images/parabol.png').default,
@@ -56,7 +56,7 @@ let timelineElements = [
       id: 4,
       title: "Embedded Systems Engineer",
       location: "Litum Technologies - Izmir/Turkey",
-      description:<p>Worked on calibrating and programming sensors and STM32 MCUs for Real-Time Locating Systems<p>C and VHDL were heavily used</p></p>,
+      description:<div><p>Worked on calibrating and programming sensors and STM32 MCUs for Real-Time Locating Systems</p><p>C and VHDL were heavily used</p></div>,
       buttonText: "",
       date: "May 2019 - August 2019",
       icon: require('../../images/litum.png').default,

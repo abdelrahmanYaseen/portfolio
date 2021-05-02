@@ -32,20 +32,20 @@ const Navbar = ({toggle}) => {
                 </MobileIcon>
                 <NavMenu>
                     <NavItem>
-                        <NavLinks smooth={true} duration={500} spy={true} exact='true' offset ={-80} to="about">About</NavLinks>
+                        <NavLinks smooth={1}  duration={500} spy={true} exact='true' offset ={-80} to="about">About</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks smooth={true} duration={500} spy={true} exact='true' offset ={-80} to="experienceTimeLine">Experience Timeline</NavLinks>
+                        <NavLinks smooth={1}  duration={500} spy={true} exact='true' offset ={-80} to="experienceTimeLine">Experience Timeline</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks smooth={true} duration={500} spy={true} exact='true' offset ={-80} to="projects">Projects</NavLinks>
+                        <NavLinks smooth={1}  duration={500} spy={true} exact='true' offset ={-80} to="projects">Projects</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks smooth={true} duration={500} spy={true} exact='true' offset ={-80} to="awards">Awards</NavLinks>
+                        <NavLinks smooth={1}  duration={500} spy={true} exact='true' offset ={-80} to="awards">Awards</NavLinks>
                     </NavItem>
                 </NavMenu>
                 <NavBtn>
-                        <NavBtnLink smooth={true} duration={500} spy={true} exact='true' offset ={-80} to="signin">Contact me</NavBtnLink>
+                        <NavBtnLink smooth= {1} duration={500} spy={true} exact='true' offset ={-80} to="signin">Contact me</NavBtnLink>
                 </NavBtn>
             </NavbarContainer>
         </Nav> 

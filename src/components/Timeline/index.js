@@ -16,12 +16,12 @@ const Timeline = () => {
     let schoolIconStyles = { background: "#01bf71" };
 
     return (
-        <div id='experienceTimeLine' style={{'margin-top':'0', 'background':'#f9f9f9'}}>
+        <div id='experienceTimeLine' style={{'marginTop':'0', 'overflow':'hidden', 'background':'#f9f9f9'}}>
            {/* <h1 className="title">Timeline</h1> */}
-            <VerticalTimeline>
+            <VerticalTimeline animate={true}>
                 {timelineElements.map((element) => {
                 let isCustomIcon = ! (element.icon === 'work' || element.icon === 'school');
-                let icon = <a href= {element.link} target='blank'  rel='noopener noreferrer' ><img 
+                let icon = <a href= {element.link} target='blank'  rel='noopener noreferrer' ><img alt= 'company-logo'
                             style= {{'height':'100%', 'width':'100%', 'padding':'10px', 'ustifyContent':'center'}} 
                             src={element.icon} /></a>
                 
