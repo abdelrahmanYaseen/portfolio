@@ -5,8 +5,7 @@ export const homeObj1 = {
     lightTextDesc: false,
     topLine: 'A bit about me',
     headLine: 'Jack of all trades, master of some.',
-    description: <div>I'm Yaseen, a former valedictorian
-     who lived in 7 countries and I'm <em>very</em> passionate about:
+    description: <div>I'm Yaseen, a former valedictorian who's <em>very</em> passionate about:
      <ul style={{'paddingLeft':'20px'}}>
         <li>Digital Project Management</li>
         <li>Blockchain</li>
@@ -19,7 +18,7 @@ export const homeObj1 = {
      <p style={{'marginTop':'10px'}}>I like to create, innovate and invest my time, effort and money in making sure 
      that technology's potential is being realized.</p>
      <p>My intrests extend far beyond the technical aspects of technology to
-      expand Computer Ethics, and both the psychological and economical effects of technology. </p>
+      include computer ethics, as well as both the psychological and economical impact of technology. </p>
      </div>
      ,
     // description: <p>I'm Yaseen, a former valedictorian of the Computer Engineering department <a style={{'color': '#01bf71'}} href="https://www.metu.edu.tr/" target="_blank">@METU</a>. Extremely passionate about technology and computing.<p>Currently I'm doing my Master's degree in Computer Science and Engineering <a style={{'color': '#01bf71'}} href="https://www.polimi.it/" >@Polimi</a></p></p>,

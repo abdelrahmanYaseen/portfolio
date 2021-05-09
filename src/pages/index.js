@@ -3,11 +3,14 @@ import React, {useState} from 'react'
 import Footer from '../components/Footer';
 import HeroSection from '../components/Herosection';
 import InfoSection from '../components/InfoSection';
-import { homeObj1, homeObj2 } from '../components/InfoSection/Data';
+import { homeObj1, homeObj2 } from '../components/InfoSection/InfoData';
+import { Project1, Project2,  Project3, Project4} from '../components/Projects/ProjectsData';
 import Navbar from '../components/Navbar'
 import Projects from '../components/Projects';
 import Sidebar from '../components/Sidebar'
 import Timeline from '../components/Timeline';
+// import MarginCalculator from '../Tools/MarginCalculator';
+
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -16,14 +19,17 @@ const Home = () => {
         setIsOpen(!isOpen)
     };
 
+    const projects_array = [Project1, Project2, Project3, Project4]
+
     return (
         <>
             <Sidebar isOpen = {isOpen} toggle = {toggle}/>
             <Navbar toggle = {toggle} />
             <HeroSection/>
+            {/* <MarginCalculator/> */}
             <InfoSection {...homeObj1}/>
             <Timeline/>
-            <Projects/>
+            <Projects projects_array = {projects_array}/>
             <InfoSection {...homeObj2}/>
             {/* <FancyCard/> */}
             <Footer/>

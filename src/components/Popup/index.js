@@ -1,7 +1,8 @@
 import React from 'react'
 import Modal from 'react-modal'
 import {MdClose} from 'react-icons/md'
-import { ClosePopupButton, PopupContent, PopupDescWrapper, PopupImage, PopupImageWrapper, VBar } from './PopupElements'
+import { ClosePopupButton,PopupButton, PopupContent, PopupDescWrapper, PopupImage, PopupImageWrapper, VBar } from './PopupElements'
+// import { Button } from '../ButtonElement'
 
 
 const style = {
@@ -11,20 +12,20 @@ const style = {
         left: 0,
         right: 0,
         bottom: 0,
-        backgroundColor: 'rgba(0, 0, 0, 0.5)'
+        backgroundColor: 'rgba(0, 20, 0, 0.5)',
     },
     content:{
-        top: '90px',
+        // top: '10px',
         // paddingTop:'30px',
-        width:'80%',
-        height:'80%',
+        // width:'100%',
+        // height:'80%',
         position: 'absolute',
         border: '1px solid #ccc',
         background: '#f9f9f9',
         WebkitOverflowScrolling: 'touch',
         borderRadius: '4px',
         margin: 'auto',
-        zindex:20,
+        // zIndex:80,
         // padding: '20px',
         // display: "flex",
         // justifyContent: "center",
@@ -32,24 +33,29 @@ const style = {
     }
 }
 
-const Popup = ({isOpen}) => {
+const Popup = (props) => {
+
     return (
         <div>
-            <Modal style={style} isOpen={true} shouldCloseOnOverlayClick={false} shouldFocusAfterRender={true}>
+        {/* { showPopup ? */}
+            <Modal style={style} isOpen={true}  onRequestClose={props.setShowPopup} shouldCloseOnOverlayClick={true}>
                 <PopupContent>
                     <PopupImageWrapper>
-                        <PopupImage src={require('../../images/project-graphics.gif').default} />
+                        <PopupImage src={props.img} />
                     </PopupImageWrapper>
                     <VBar />
                     <PopupDescWrapper>
-                        <h1> Are You Ready?</h1>
-                        <p>some random text</p>
+                        <h1 style={{'margin':'14px'}}>{props.title}</h1>
+                        <p style={{'margin':'14px'}} >{props.description}</p>
+                        <PopupButton href={props.btnLink} style={{'margin':'14px'}} target="_blank" >{props.btnLabel}</PopupButton>
                     </PopupDescWrapper>
-                    <ClosePopupButton><MdClose size={40} /></ClosePopupButton>
+                    <ClosePopupButton onClick={props.setShowPopup}><MdClose size={40} /></ClosePopupButton>
                 </PopupContent>
-            </Modal>
+            </Modal> 
+            {/* : null } */}
         </div>
     )
 }
 
 export default Popup
+
