@@ -1,32 +1,84 @@
 import styled from 'styled-components'
 
-export const PopupContent = styled.div`
 
-    display: flex;
-    flex-direction:row;
-    align-items: stretch;
-    justify-content: space-evenly;
-    flex-wrap: nowrap;
-    height: 100%;
-    width : 100%;
-    ${'' /* overflow-y: hidden; */}
-    @media screen and (max-width: 1000px){
-        display: block;
-        ${'' /* flex-direction : column; */}
-        ${'' /* justify-content: center; */}
-        ${'' /* align-items: center; */}
-        ${'' /* flex-wrap: nowrap; */}
+
+const popupcontentstyle = {
+    padding: '0px',
+    top:'90px',
+    height:'75%',
+    overflow:'hidden',
+
+    background: '#f9f9f9',
+    WebkitOverflowScrolling: 'touch',
+
+    margin: 'auto',
+    justifyContent: "center",
+    alignItems: "center",
+};
+
+const popupcontentstyle2 = styled.div`
+    padding: 0px;
+    top:90px;
+    height:75%;
+    overflow:hidden;
+    background: #f9f9f9;
+    WebkitOverflowScrolling: touch;
+    margin: auto;
+    justifyContent: center;
+    alignItems: center;
+`;
+export const PopupStyle = {
+    overlay: {
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        backgroundColor: 'rgba(0, 20, 0, 0.5)',
+    },
+    content:popupcontentstyle,
+}
+export const PopupContent = styled.div`
+    display:grid;
+    grid-template-columns: 70% 30%;
+    @media screen and (max-width: 750px){
+        display:block;
+        ${'' /* position:relative; */}
    }
 
 `;
+
+export const PopupImageWrapper = styled.div`
+    ${'' /* background:#f00;  */}
+    height:100%;
+    overflow:hidden;
+`;
+
+export const PopupImage = styled.img`
+    height:100%;
+    overflow:hidden;
+    object-fit: contain;
+    width:100%;
+`;
+
+export const PopupDescWrapper = styled.div`
+    ${'' /* background:#f0f; */}
+    ${'' /* position:absolute; 
+    bottom:0px; */}
+    padding:15px;
+    text-align: justify;
+    
+    
+`;
+
 export const ClosePopupButton = styled.div`
     cursor:pointer;
-    top:11%;
+    top:15%;
     right:3%;
     width:50px;
     height:50px;
     padding:0;
-    color: #f00;
+    color: #000;
     z-index:999;
     position:fixed;
     @media screen and (max-width: 750px){
@@ -43,35 +95,6 @@ export const VBar = styled.img`
     @media screen and (max-width: 1000px){
        display:none;
    }
-`;
-export const PopupImageWrapper = styled.div`
-   padding:20px;
-   overflow: hidden;
-   margin-top: 20px;
-   width: 100%;
-   @media screen and (max-width: 1000px){
-        margin-top: 50px;
-        overflow: visible;
-        height:50%;
-        justify-content:center;
-        align-text:center;
-        display:flex;
-   }
-`;
-
-export const PopupImage = styled.img`
-    object-fit: cover;
-    padding: 0px;
-    margin: 0;
-    ${'' /* border-radius:8%; */}
-    ${'' /* border-width:1px; */}
-    ${'' /* border: 3px solid #01bf71; */}
-    ${'' /* height: 100%; */}
-    ${'' /* width: 100%; */}
-    ${'' /* @media screen and (max-width: 1000px){
-        width: 100%;
-        height: 100%;
-   } */}
 `;
 
 export const PopupButton = styled.a`
@@ -97,18 +120,3 @@ export const PopupButton = styled.a`
 
 `;
 
-export const PopupDescWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 20px;
-    width:50%;
-    text-align: justify;
-    text-justify: inter-character;
-    ${'' /* align-self: center; */}
-    ${'' /* height: 80%; */}
-    @media screen and (max-width: 1000px){
-        width:100%;
-   }
-    
-`;

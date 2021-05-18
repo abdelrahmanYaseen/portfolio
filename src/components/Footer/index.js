@@ -1,5 +1,5 @@
 import React from 'react'
-import { FooterContainer, FooterLink, FooterLinkItems, FooterLinksContainer, FooterLinksWrapper, FooterLinkTitle, FooterWrap } from './FooterElements'
+import { FooterContainer, FooterLinkR, FooterLinkS, FooterLinkItems, FooterLinksContainer, FooterLinksWrapper, FooterLinkTitle, FooterWrap } from './FooterElements'
 
 const Footer = () => {
     return (
@@ -9,34 +9,34 @@ const Footer = () => {
                  <FooterLinksContainer>
                      <FooterLinksWrapper>
                          <FooterLinkItems>
-                             <FooterLinkTitle> Footer 1</FooterLinkTitle>
-                                 <FooterLink to="/"> Link1</FooterLink>
-                                 <FooterLink to="/"> Link2</FooterLink>
-                                 <FooterLink to="/"> Link3</FooterLink>
-                                 <FooterLink to="/"> Link4</FooterLink>
+                             <FooterLinkTitle>Navigation</FooterLinkTitle>
+                                 <FooterLinkS smooth={1}  duration={500} spy={true} exact='true' offset ={-80} to="about"> About</FooterLinkS>
+                                 <FooterLinkS smooth={1}  duration={500} spy={true} exact='true' offset ={-80} to="experienceTimeLine"> Experience Timeline</FooterLinkS>
+                                 <FooterLinkS smooth={1}  duration={500} spy={true} exact='true' offset ={-80} to="projects"> Projects</FooterLinkS>
+                                 <FooterLinkS smooth={1}  duration={500} spy={true} exact='true' offset ={-80} to="awards"> Awards</FooterLinkS>
                          </FooterLinkItems>
                          <FooterLinkItems>
-                             <FooterLinkTitle> Footer 2</FooterLinkTitle>
-                                 <FooterLink to="/"> Link1</FooterLink>
-                                 <FooterLink to="/"> Link2</FooterLink>
-                                 <FooterLink to="/"> Link3</FooterLink>
-                                 <FooterLink to="/"> Link4</FooterLink>
+                             <FooterLinkTitle> Projects</FooterLinkTitle>
+                                 <FooterLinkR to="/"> Link1</FooterLinkR>
+                                 <FooterLinkR to="/"> Link2</FooterLinkR>
+                                 <FooterLinkR to="/"> Link3</FooterLinkR>
+                                 <FooterLinkR to="/"> Link4</FooterLinkR>
                          </FooterLinkItems>
                      </FooterLinksWrapper>
                      <FooterLinksWrapper>
                          <FooterLinkItems>
                              <FooterLinkTitle> Footer 3</FooterLinkTitle>
-                                 <FooterLink to="/"> Link1</FooterLink>
-                                 <FooterLink to="/"> Link2</FooterLink>
-                                 <FooterLink to="/"> Link3</FooterLink>
-                                 <FooterLink to="/"> Link4</FooterLink>
+                                 <FooterLinkR to="/"> Link1</FooterLinkR>
+                                 <FooterLinkR to="/"> Link2</FooterLinkR>
+                                 <FooterLinkR to="/"> Link3</FooterLinkR>
+                                 <FooterLinkR to="/"> Link4</FooterLinkR>
                          </FooterLinkItems>
                          <FooterLinkItems>
                              <FooterLinkTitle> Footer 4</FooterLinkTitle>
-                                 <FooterLink to="/"> Link1</FooterLink>
-                                 <FooterLink to="/"> Link2</FooterLink>
-                                 <FooterLink to="/"> Link3</FooterLink>
-                                 <FooterLink to="/"> Link4</FooterLink>
+                                 <FooterLinkR to="/"> Link1</FooterLinkR>
+                                 <FooterLinkR to="/"> Link2</FooterLinkR>
+                                 <FooterLinkR to="/"> Link3</FooterLinkR>
+                                 <FooterLinkR to="/"> Link4</FooterLinkR>
                          </FooterLinkItems>
                      </FooterLinksWrapper>
                  </FooterLinksContainer>

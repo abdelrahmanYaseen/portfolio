@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import HeroSection from '../components/Herosection';
 import InfoSection from '../components/InfoSection';
 import { homeObj1, homeObj2 } from '../components/InfoSection/InfoData';
-import { Project1, Project2,  Project3, Project4} from '../components/Projects/ProjectsData';
+import {Projects_data} from '../components/Projects/ProjectsData';
 import Navbar from '../components/Navbar'
 import Projects from '../components/Projects';
 import Sidebar from '../components/Sidebar'
@@ -19,7 +19,9 @@ const Home = () => {
         setIsOpen(!isOpen)
     };
 
-    const projects_array = [Project1, Project2, Project3, Project4]
+    const projects_array = Object.values(Projects_data) 
+
+    // [Project1, Project2, Project3, Project4]
 
     return (
         <>

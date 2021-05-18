@@ -54,7 +54,8 @@ export const ProjectsCard = styled.div`
     justify-content: flex-start;
     align-items: center;
     border-radius: 10px;
-    max-height: 340px;
+    max-height: 240px;
+    max-width: 240px;
     padding: 30px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out;
@@ -68,8 +69,8 @@ export const ProjectsCard = styled.div`
 `;
 export const ProjectsIcon = styled.img`
     object-fit: cover;
-    height: 160px;
-    width: 160px;
+    height: 100px;
+    width: 100px;
     margin-bottom: 10px;
     border-radius: 10px;
 `;
