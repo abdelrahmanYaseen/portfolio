@@ -6,7 +6,7 @@ const popupcontentstyle = {
     padding: '0px',
     top:'90px',
     height:'75%',
-    overflow:'hidden',
+    overflow:'scroll',
 
     background: '#f9f9f9',
     WebkitOverflowScrolling: 'touch',
@@ -16,17 +16,17 @@ const popupcontentstyle = {
     alignItems: "center",
 };
 
-const popupcontentstyle2 = styled.div`
-    padding: 0px;
-    top:90px;
-    height:75%;
-    overflow:hidden;
-    background: #f9f9f9;
-    WebkitOverflowScrolling: touch;
-    margin: auto;
-    justifyContent: center;
-    alignItems: center;
-`;
+// const popupcontentstyle2 = styled.div`
+//     padding: 0px;
+//     top:90px;
+//     height:75%;
+//     overflow:hidden;
+//     background: #f9f9f9;
+//     WebkitOverflowScrolling: touch;
+//     margin: auto;
+//     justifyContent: center;
+//     alignItems: center;
+// `;
 export const PopupStyle = {
     overlay: {
         position: 'fixed',
@@ -87,15 +87,15 @@ export const ClosePopupButton = styled.div`
 `;
 
 
-export const VBar = styled.img`
-    border-left:1px solid #01bf71;
-    height:100%;
-    width:1px;
-    display: flex;
-    @media screen and (max-width: 1000px){
-       display:none;
-   }
-`;
+// export const VBar = styled.img`
+//     border-left:1px solid #01bf71;
+//     height:100%;
+//     width:1px;
+//     display: flex;
+//     @media screen and (max-width: 1000px){
+//        display:none;
+//    }
+// `;
 
 export const PopupButton = styled.a`
     border-radius: 50px;

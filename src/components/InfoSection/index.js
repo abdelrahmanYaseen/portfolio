@@ -20,6 +20,7 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headLine, darkT
                              <TopLine>{topLine}</TopLine>
                              <Heading lightText={lightText}>{headLine}</Heading>
                              <Subtitle darkText={darkText}>{description}</Subtitle>
+                             {btnLink === ''? 
                              <BtnWrap>
                                  <Button
                                     to={btnLink}
@@ -33,6 +34,8 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headLine, darkT
 
                                  >{buttonLabel}</Button>
                              </BtnWrap>
+                             :''
+                            }
                          </TextWrapper>
                      </Column1>
                      <Column2>

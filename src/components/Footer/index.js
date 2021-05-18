@@ -1,5 +1,47 @@
 import React from 'react'
-import { FooterContainer, FooterLinkR, FooterLinkS, FooterLinkItems, FooterLinksContainer, FooterLinksWrapper, FooterLinkTitle, FooterWrap } from './FooterElements'
+import { FooterContainer, FooterLinkS, FooterLinkItems, FooterLinksContainer, FooterLinksWrapper, FooterLinkTitle, FooterWrap } from './FooterElements'
+import {Projects_data} from '../Projects/ProjectsData';
+import {awards_data} from '../InfoSection/awardsData';
+import timelineElements from "../Timeline/TimelineElements";
+
+const experiences = timelineElements.map( item => {
+    return (
+        <FooterLinkS 
+        smooth={1} 
+        duration={500} 
+        spy={true} exact='true' offset ={-80} to = {'experience_'.concat(item.id.toString())}> 
+        {item.short_title}
+        </FooterLinkS>
+    )
+})
+
+const awards_array = Object.values(awards_data) 
+const awards = awards_array.map( item => {
+    return (
+        <FooterLinkS 
+        smooth={1} 
+        duration={500} 
+        spy={true} exact='true' offset ={-80} to = {'award_'.concat(item.id.toString())}> 
+        {item.year}
+        </FooterLinkS>
+        
+
+    )
+})
+const projects_array = Object.values(Projects_data) 
+const projects = projects_array.map( item => {
+    return (
+        <FooterLinkS 
+        smooth={1} 
+        duration={500} 
+        spy={true} exact='true' offset ={-80} to = {'project_'.concat(item.id.toString())}> 
+        {item.title}
+        </FooterLinkS>
+        
+
+    )
+})
+
 
 const Footer = () => {
     return (
@@ -17,26 +59,17 @@ const Footer = () => {
                          </FooterLinkItems>
                          <FooterLinkItems>
                              <FooterLinkTitle> Projects</FooterLinkTitle>
-                                 <FooterLinkR to="/"> Link1</FooterLinkR>
-                                 <FooterLinkR to="/"> Link2</FooterLinkR>
-                                 <FooterLinkR to="/"> Link3</FooterLinkR>
-                                 <FooterLinkR to="/"> Link4</FooterLinkR>
+                                 {projects}
                          </FooterLinkItems>
                      </FooterLinksWrapper>
                      <FooterLinksWrapper>
                          <FooterLinkItems>
-                             <FooterLinkTitle> Footer 3</FooterLinkTitle>
-                                 <FooterLinkR to="/"> Link1</FooterLinkR>
-                                 <FooterLinkR to="/"> Link2</FooterLinkR>
-                                 <FooterLinkR to="/"> Link3</FooterLinkR>
-                                 <FooterLinkR to="/"> Link4</FooterLinkR>
+                             <FooterLinkTitle> Awards</FooterLinkTitle>
+                                 {awards}
                          </FooterLinkItems>
                          <FooterLinkItems>
-                             <FooterLinkTitle> Footer 4</FooterLinkTitle>
-                                 <FooterLinkR to="/"> Link1</FooterLinkR>
-                                 <FooterLinkR to="/"> Link2</FooterLinkR>
-                                 <FooterLinkR to="/"> Link3</FooterLinkR>
-                                 <FooterLinkR to="/"> Link4</FooterLinkR>
+                             <FooterLinkTitle>Experiences</FooterLinkTitle>
+                                 {experiences}
                          </FooterLinkItems>
                      </FooterLinksWrapper>
                  </FooterLinksContainer>

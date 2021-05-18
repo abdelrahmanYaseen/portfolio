@@ -1,6 +1,7 @@
 let timelineElements = [
     {
       id:1,
+      short_title:'MSc. Degree',
       title: "M.Sc. Computer Science and Engineering - Student",
       location: "Politecnico Di Milano - Milan/Italy",
       description:
@@ -14,6 +15,7 @@ let timelineElements = [
     {
         id:2,
         title: "Data Modeler - Thesis Work",
+        short_title:'Data Modeler',
         location: "Blurcock Logistics - Den Bosch/Netherlands",
         description:
             "Building a framework for the detection of microzones, where a microzone is a geographical cluster of customers with a specific behaviour that helps in having a stable tactical and operational planning",
@@ -27,6 +29,7 @@ let timelineElements = [
     {
       id: 3,
       title: "Full stack developer - Part Time",
+      short_title:'Full stack developer',
       location: "Mates4Digital - Milan/Italy",
       description:
         "Contributed in building a framework to automate the analysis of e-commerce websites to gain business insights. Used Flask and django.",
@@ -39,6 +42,7 @@ let timelineElements = [
     {
       id:4,
       title: "Data Analyst",
+      short_title:'Data Analyst',
       location: "Parabol Yazilim - Ankara/Turkey",
       description:
           <div><p>Worked with brillient people on the problem of Traffic
@@ -55,6 +59,7 @@ let timelineElements = [
     {
       id: 4,
       title: "Embedded Systems Engineer",
+      short_title:'Embedded Systems Engineer',
       location: "Litum Technologies - Izmir/Turkey",
       description:<div><p>Worked on calibrating and programming sensors and STM32 MCUs for Real-Time Locating Systems</p><p>C and VHDL were heavily used</p></div>,
       buttonText: "",
@@ -66,6 +71,7 @@ let timelineElements = [
     {
       id:5,
       title: "BSc. Computer Engineering",
+      short_title:'BSc. Degree',
       location: "Middle East Technical University - Ankara/Turkey",
       description:<p>Graduated as a valedictorian with a <span style = {{'color' :'#01bf71'}} ><b>CGPA of 4.0/4.0</b></span>, being the second student to achive this CGPA over the history of the CNG department of METU KKK.</p>,
       buttonText: "",
@@ -77,6 +83,7 @@ let timelineElements = [
     {
       id: 5,
       title: "Student",
+      short_title:'Highschool studies',
       location: "Anin High School - Jenin/Palestine",
       description:
         <p>Graduated with a <span style = {{'color' :'#01bf71'}} ><b>CGPA of 97.9%</b></span>, ranked among the <span style = {{'color' :'#01bf71'}} ><b>top 3%</b></span> over the nation.</p>,

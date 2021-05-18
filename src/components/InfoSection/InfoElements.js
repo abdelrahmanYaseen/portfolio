@@ -2,11 +2,13 @@ import styled from 'styled-components'
 
 
 export const InfoContainer = styled.div`
+    height:100%;
     color: #fff;
     background: ${({lightBg}) => (lightBg? '#f9f9f9' : '#010606')};
-    
+    padding-top: 100px;
     @media screen and (max-width : 680px){
-        padding: 100px 0;
+        padding-top: 150px;
+        padding-bottom: 400px;
     }
 `;
 export const InfoWrapper = styled.div`

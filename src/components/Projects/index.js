@@ -31,7 +31,7 @@ const Projects = (props) => {
 
     const projects = props.projects_array.map( item => {
         return (
-            <ProjectsCard key={item.id} onClick={() => openPopup(item.id)}  data-aos="flip-up" rotationDirection={Math.random() >= 0.5}>
+            <ProjectsCard id = {'project_'.concat(item.id.toString())} key={item.id} onClick={() => openPopup(item.id)}  data-aos="flip-up" rotationDirection={Math.random() >= 0.5}>
                 <ProjectsIcon src = {item.icon}/>
                 <ProjectsH2>{item.title}</ProjectsH2>
                 <ProjectsP>{item.description}</ProjectsP>

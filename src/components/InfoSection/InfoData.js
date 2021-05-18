@@ -1,3 +1,20 @@
+import {awards_data} from './awardsData'
+
+const awards_array = Object.values(awards_data) 
+const awards = awards_array.map( item => {
+    return (
+        <div id = {'award_'.concat(item.id.toString())}>
+        <li style = {{'color':'#01bf71', 'margin-top':'10px'}}><b> {item.year }</b></li>
+        <br/>
+        <p style = {{'margin-left':'5%'}}>{item.award}</p>
+        <br/>
+        </div>
+        
+
+    )
+})
+
+
 export const homeObj1 = {
     id: 'about',
     lightBg: true,
@@ -32,19 +49,21 @@ export const homeObj1 = {
     darkText: true,
 };
 export const homeObj2 = {
-    id: 'discover',
+    id: 'awards',
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
-    topLine: 'test top line2',
-    headLine: 'test headline2',
-    description: 'test description2',
-    buttonLabel: 'testBtnLbl2',
-    btnLink:"/",
-    imgStart : false,
-    img: require('../../images/svg-2.svg').default,
+    topLine: 'My awards',
+    headLine: 'Awards',
+    description: <div style = {{'align-text':'center', 'width':'100%'}}>
+                    {awards}
+                </div>,
+    buttonLabel: null,
+    btnLink:null,
+    imgStart : true,
+    img: require('../../images/awards.svg').default,
     alt:'test alt',
-    dark:true,
-    primary: true,
-    darkText: false,
+    dark:false,
+    primary: false,
+    darkText: true,
 };

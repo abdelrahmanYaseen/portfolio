@@ -35,6 +35,7 @@ const Timeline = () => {
 
                 return (
                     <VerticalTimelineElement
+                    id = {'experience_'.concat(element.id.toString())}
                     key={element.key}
                     date={element.date}
                     dateClassName="date"
