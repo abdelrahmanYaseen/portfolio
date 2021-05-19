@@ -46,7 +46,7 @@ const projects = projects_array.map( item => {
 const Footer = () => {
     return (
         <>
-         <FooterContainer>
+         <FooterContainer id = 'footer'>
              <FooterWrap>
                  <FooterLinksContainer>
                      <FooterLinksWrapper>

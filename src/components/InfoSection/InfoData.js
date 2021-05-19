@@ -22,7 +22,7 @@ export const homeObj1 = {
     lightTextDesc: false,
     topLine: 'A bit about me',
     headLine: 'Jack of all trades, master of some.',
-    description: <div>I'm Yaseen, a former valedictorian who's <em>very</em> passionate about:
+    description: <div>Yaseen, a former valedictorian who's <em>very</em> passionate about:
      <ul style={{'paddingLeft':'20px'}}>
         <li>Digital Projects Management</li>
         <li>Blockchain</li>

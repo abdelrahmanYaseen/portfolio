@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import { IoIosArrowDropdownCircle,IoIosArrowDropupCircle } from "react-icons/io";
-// import icon2 from '../../images/svg-2.svg'
-// import icon3 from '../../images/svg-3.svg'
+
+
 import {  ProjectsCard, ProjectsContainer, ProjectsH1, ProjectsH2, ProjectsIcon, ProjectsP, ProjectsWrapper, ScrollUp, ShowMoreButton} from './ProjectsElements'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -75,30 +75,32 @@ const Projects = (props) => {
 
     return (
         <ProjectsContainer id = 'projects'>
-            <ProjectsH1> Some of My Projects</ProjectsH1>
+                <ProjectsH1> Some of My Projects</ProjectsH1>
 
-            <ProjectsWrapper >
-                {projects}
-            </ProjectsWrapper>
-            <ShowMoreButton >
-                {showNumber < props.projects_array.length ?
-                <IoIosArrowDropdownCircle onClick={showMore} size={40}/>
-                :
-                <ScrollUp smooth={1}  duration={600} spy={true} exact='true' offset ={-80}  onClick={showLess} to="projects">
-                        <IoIosArrowDropupCircle  size={40} />
-                </ScrollUp>
-                }
-            </ShowMoreButton>
+                <ProjectsWrapper >
+                
+                        {projects}
+                    
+                </ProjectsWrapper>
+
+                <ShowMoreButton >
+                    {showNumber < props.projects_array.length ?
+                    <IoIosArrowDropdownCircle onClick={showMore} size={40}/>
+                    :
+                    <ScrollUp smooth={1}  duration={600} spy={true} exact='true' offset ={-80}  onClick={showLess} to="projects">
+                            <IoIosArrowDropupCircle  size={40} />
+                    </ScrollUp>
+                    }
+                </ShowMoreButton>
 
 
-            {showPopup ?      
-            <Popup setShowPopup={() => openPopup(popup_id)}
-                title = {props.projects_array[popup_id].popup.title}
-                description = {props.projects_array[popup_id].popup.description}
-                btnLabel = {props.projects_array[popup_id].popup.btnLabel}
-                btnLink = {props.projects_array[popup_id].popup.btnLink}
-                img = {props.projects_array[popup_id].popup.img}/> : null}
-
+                {showPopup ?      
+                <Popup setShowPopup={() => openPopup(popup_id)}
+                    title = {props.projects_array[popup_id].popup.title}
+                    description = {props.projects_array[popup_id].popup.description}
+                    btnLabel = {props.projects_array[popup_id].popup.btnLabel}
+                    btnLink = {props.projects_array[popup_id].popup.btnLink}
+                    img = {props.projects_array[popup_id].popup.img}/> : null}
         </ProjectsContainer>
     )
 }

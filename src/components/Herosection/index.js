@@ -10,10 +10,10 @@ const HeroSection = () => {
             </HeroBg>
             <HeroContent>
                 {/* <HeroH1> Howdy !  </HeroH1> */}
-                <HeroP> <b>My name is Yaseen, 
-                I am a Computer Engineer, Blockchain Developer, 
+                <HeroP> I'm Yaseen, 
+                 a Computer Engineer, Blockchain Developer, 
                 and a Data Modeler.<br/> Please have a seat, 
-                scroll down, and I'll get you a coffee. </b></HeroP>
+                scroll down, and I'll get you a coffee.</HeroP>
             </HeroContent>
         </HeroContainer>
     )

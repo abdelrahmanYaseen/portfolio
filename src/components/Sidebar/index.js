@@ -10,9 +10,9 @@ const Sidebar = ({isOpen, toggle}) => {
             <SidebarWrapper>
                 <SidebarMenu>
                     <SidebarLink onClick={toggle}  to="about">About</SidebarLink>
-                    <SidebarLink onClick={toggle}  to="discover">Discover</SidebarLink>
                     <SidebarLink  onClick={toggle} to="projects">Projects</SidebarLink>
                     <SidebarLink  onClick={toggle} to="awards">Awards</SidebarLink>
+                    <SidebarLink onClick={toggle}  to="footer">Site Map</SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
                     <SidebarRout onClick={toggle} to="contact">Contact Me</SidebarRout>
