@@ -24,13 +24,11 @@ export const homeObj1 = {
     headLine: 'Jack of all trades, master of some.',
     description: <div>I'm Yaseen, a former valedictorian who's <em>very</em> passionate about:
      <ul style={{'paddingLeft':'20px'}}>
-        <li>Digital Project Management</li>
+        <li>Digital Projects Management</li>
         <li>Blockchain</li>
-        <li>Supply Chain</li>
+        <li>Data - in all its forms</li>
         <li>Finance</li>
-        <li>Graphics</li>
-        <li>Optimization</li>
-        <li>Machine Learning</li>
+        <li>Machine Learning and Optimization</li>
     </ul>
      <p style={{'marginTop':'10px'}}>I like to create, innovate and invest my time, effort and money in making sure 
      that technology's potential is being realized.</p>
@@ -67,3 +65,29 @@ export const homeObj2 = {
     primary: false,
     darkText: true,
 };
+
+export const homeObj3 = {
+    id: 'contact',
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
+    topLine: 'Email me',
+    headLine: 'Contact',
+    description: <div style = {{'align-text':'center', 'width':'100%'}}>
+                    I am always happy to put my efforts in a complex task, 
+                    so do not hesitate to hit me up with your requests! 
+                    And if your project will benefit the humanity in any meaningful way
+                    I will make a 50% discount right away. No kidding.
+                </div>,
+    buttonLabel: 'Email me',
+    btnLink:'mailto: abdalrahman.yaseen@gmail.com',
+    imgStart : false,
+    img: require('../../images/contact-me.svg').default,
+    alt:'test',
+    dark:true,
+    primary: true,
+    darkText: false,
+};
+
+
+{/* <a href = "mailto: abdalrahman.yaseen@gmail.com">Send Email</a> */}

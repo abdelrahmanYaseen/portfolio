@@ -56,6 +56,7 @@ const Footer = () => {
                                  <FooterLinkS smooth={1}  duration={500} spy={true} exact='true' offset ={-80} to="experienceTimeLine"> Experience Timeline</FooterLinkS>
                                  <FooterLinkS smooth={1}  duration={500} spy={true} exact='true' offset ={-80} to="projects"> Projects</FooterLinkS>
                                  <FooterLinkS smooth={1}  duration={500} spy={true} exact='true' offset ={-80} to="awards"> Awards</FooterLinkS>
+                                 <FooterLinkS smooth={1}  duration={500} spy={true} exact='true' offset ={-80} to="contact"> Contact</FooterLinkS>
                          </FooterLinkItems>
                          <FooterLinkItems>
                              <FooterLinkTitle> Projects</FooterLinkTitle>

@@ -20,18 +20,12 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headLine, darkT
                              <TopLine>{topLine}</TopLine>
                              <Heading lightText={lightText}>{headLine}</Heading>
                              <Subtitle darkText={darkText}>{description}</Subtitle>
-                             {btnLink === ''? 
+                             {btnLink != null? 
                              <BtnWrap>
                                  <Button
-                                    to={btnLink}
-                                    smooth = {1}
-                                    duration = {500}
-                                    spy={true}
-                                    offset = {-80}
+                                    href={btnLink}
                                     primary = {primary? 1: 0}
                                     dark = {dark? 1: 0}
-
-
                                  >{buttonLabel}</Button>
                              </BtnWrap>
                              :''

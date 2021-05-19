@@ -29,14 +29,14 @@ export const awards_data =
      award5: {
            id : 5,
            year: '2015',
-           award: <div>Won the 3rd place at the International Science and Engineering Fair (ISEF) Palestine – Mobile Applications Design</div>
+           award: <div>Won the 3rd place at the national Science and Engineering Fair (ISEF) Palestine – Mobile Applications Design</div>
      },             
                       
 
      award6: {
            id : 6,
            year: '2010',
-           award: <div>ack-Belt in Karate, Palestinian Karate Federation</div>
+           award: <div>Black-Belt in Karate, Palestinian Karate Federation</div>
      }
 
 }

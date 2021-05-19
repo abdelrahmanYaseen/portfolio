@@ -3,7 +3,7 @@ import React, {useState} from 'react'
 import Footer from '../components/Footer';
 import HeroSection from '../components/Herosection';
 import InfoSection from '../components/InfoSection';
-import { homeObj1, homeObj2 } from '../components/InfoSection/InfoData';
+import { homeObj1, homeObj2,homeObj3 } from '../components/InfoSection/InfoData';
 import {Projects_data} from '../components/Projects/ProjectsData';
 import Navbar from '../components/Navbar'
 import Projects from '../components/Projects';
@@ -33,6 +33,7 @@ const Home = () => {
             <Timeline/>
             <Projects projects_array = {projects_array}/>
             <InfoSection {...homeObj2}/>
+            <InfoSection {...homeObj3}/>
             {/* <FancyCard/> */}
             <Footer/>
 

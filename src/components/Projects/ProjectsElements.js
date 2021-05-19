@@ -1,8 +1,21 @@
 import styled from 'styled-components'
-
+import {Link} from 'react-scroll'
 // aaaaaaaaaaaaaaaa
 
-
+export const ScrollUp = styled(Link)`
+    cursor: pointer;
+`;
+export const ShowMoreButton = styled.div`
+    cursor: pointer;
+    color: #01bf71;
+    margin:15px;
+    ${'' /* align-text:center;
+    display:block;
+    justify-content: center;
+    align-items: center;
+    size: 30px;
+    margin:0; */}
+`
 export const ProjectsContainer = styled.div`
     height: 100%;
     padding:50px;
@@ -11,6 +24,7 @@ export const ProjectsContainer = styled.div`
     justify-content: center;
     align-items: center;
     background: #010606;
+    padding-top:100px;
     
     ${'' /* @media screen and (max-width: 768px){
         height: 1100px;
