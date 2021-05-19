@@ -7,7 +7,7 @@ let timelineElements = [
       description:
           "Excelling in Digital Projects Management, High-Tech Enterprenurship, Operations Research, Machine Learning and Data Management.",
       buttonText: "",
-      date: "September 2021 - present",
+      date: "September 2019 - present",
       icon: require('../../images/polimi.png').default,
       bgcolor: "#eee",
       link: "http://polimi.it/",
@@ -75,7 +75,7 @@ let timelineElements = [
       location: "Middle East Technical University - Ankara/Turkey",
       description:<p>Graduated as a valedictorian with a <span style = {{'color' :'#01bf71'}} ><b>CGPA of 4.0/4.0</b></span>, being the second student to achive this CGPA over the history of the CNG department of METU KKK.</p>,
       buttonText: "",
-      date: "August 2014 - June 2015",
+      date: "August 2014 - June 2019",
       icon: require('../../images/metu.png').default,
       bgcolor: "#eee",
       link: "https://www.metu.edu.tr/",

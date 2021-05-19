@@ -1,5 +1,5 @@
 import React from 'react'
-import { HeroBg, HeroContainer, HeroContent, HeroH1, HeroP, VideoBg } from './HeroElements'
+import { HeroBg, HeroContainer, HeroContent, HeroP, VideoBg } from './HeroElements'
 import Video from '../../videos/video-sg.mp4'
 
 const HeroSection = () => {
@@ -11,10 +11,13 @@ const HeroSection = () => {
             <HeroContent>
                 {/* <HeroH1> Howdy !  </HeroH1> */}
                 <HeroP> I'm Yaseen, 
-                 a Computer Engineer, Blockchain Developer, 
+                 a Computer Engineer, Blockchain Developer 
                 and a Data Modeler.<br/> Please have a seat, 
                 scroll down, and I'll get you a coffee.</HeroP>
             </HeroContent>
+            
+
+
         </HeroContainer>
     )
 }

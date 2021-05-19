@@ -32,7 +32,7 @@ export const homeObj1 = {
     </ul>
      <p style={{'marginTop':'10px'}}>I like to create, innovate and invest my time, effort and money in making sure 
      that technology's potential is being realized.</p>
-     <p>My intrests extend far beyond the technical aspects of technology to
+     <p>My interests extend far beyond the technical aspects of technology to
       include computer ethics, as well as both the psychological and economical impact of technology. </p>
      </div>
      ,
@@ -89,5 +89,3 @@ export const homeObj3 = {
     darkText: false,
 };
 
-
-{/* <a href = "mailto: abdalrahman.yaseen@gmail.com">Send Email</a> */}
