@@ -87,7 +87,7 @@ const Projects = (props) => {
                     {showNumber < props.projects_array.length ?
                     <IoIosArrowDropdownCircle onClick={showMore} size={40}/>
                     :
-                    <ScrollUp smooth={1}  duration={600} spy={true} exact='true' offset ={-80}  onClick={showLess} to="projects">
+                    <ScrollUp smooth={1}  duration={600} spy={true} exact='true' offset ={-40}  onClick={showLess} to="projects">
                             <IoIosArrowDropupCircle  size={40} />
                     </ScrollUp>
                     }

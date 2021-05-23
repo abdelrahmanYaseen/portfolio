@@ -17,7 +17,7 @@ const Timeline = () => {
 
     return (
         <div id='experienceTimeLine' style={{'marginTop':'0', 'overflow':'hidden', 'background':'#f9f9f9'}}>
-           {/* <h1 className="title">Timeline</h1> */}
+           <h1 style={{'text-align':'center','margin':'30px'}}>Timeline</h1>
             <VerticalTimeline animate={true}>
                 {timelineElements.map((element) => {
                 let isCustomIcon = ! (element.icon === 'work' || element.icon === 'school');

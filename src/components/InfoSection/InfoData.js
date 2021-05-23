@@ -37,8 +37,8 @@ export const homeObj1 = {
      </div>
      ,
     // description: <p>I'm Yaseen, a former valedictorian of the Computer Engineering department <a style={{'color': '#01bf71'}} href="https://www.metu.edu.tr/" target="_blank">@METU</a>. Extremely passionate about technology and computing.<p>Currently I'm doing my Master's degree in Computer Science and Engineering <a style={{'color': '#01bf71'}} href="https://www.polimi.it/" >@Polimi</a></p></p>,
-    buttonLabel: 'Full Experience Timeline',
-    btnLink:"projects",
+    buttonLabel: null,
+    btnLink:null,
     imgStart : false,
     img: require('../../images/self.svg').default,
     alt:'test alt',
