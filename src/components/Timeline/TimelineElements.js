@@ -1,4 +1,17 @@
 let timelineElements = [
+  {
+    id:1,
+    short_title:'Software and Data Enginer',
+    title: "Software and Data Enginer",
+    location: "Blurcock TMS - Den Bosch/Netherlands",
+    description:
+        "Building data processing pipelines, interactive dashboards and tools that help businesses have more insight into their data and make informed decisions.",
+    buttonText: "",
+    date: "August 2021 - Present",
+    icon: require('../../images/brl.png').default,
+    bgcolor: "#eee",
+    link: "http://bluerocktms.com/",
+  },
     {
       id:1,
       short_title:'MSc. Degree',
@@ -7,7 +20,7 @@ let timelineElements = [
       description:
           "Excelling in Digital Projects Management, High-Tech Enterprenurship, Operations Research, Machine Learning and Data Management.",
       buttonText: "",
-      date: "September 2019 - present",
+      date: "September 2019 - September 2021",
       icon: require('../../images/polimi.png').default,
       bgcolor: "#eee",
       link: "http://polimi.it/",
@@ -16,7 +29,7 @@ let timelineElements = [
         id:2,
         title: "Data Modeler - Thesis Work",
         short_title:'Data Modeler',
-        location: "Blurcock Logistics - Den Bosch/Netherlands",
+        location: "Blurcock TMS - Den Bosch/Netherlands",
         description:
             "Building a framework for the detection of microzones, where a microzone is a geographical cluster of customers with a specific behaviour that helps in having a stable tactical and operational planning",
         buttonText: "",
