@@ -38,16 +38,17 @@ export const VideoBg = styled.video`
     height: 100%;
     -o-object-fit: cover;
     object-fit:cover;
-    background:#232a34
+    background:#232a34;
 `;
 
 
 export const ImageBg = styled.img`
     width:100%;
     height: 100%;
-    // -o-object-fit: cover;
-    // object-fit:cover;
-    // background:#232a34
+    -o-object-fit: cover;
+    object-fit:cover;
+    background:#232a34;
+    object-position: 5% 95%;
 `;
 
 
