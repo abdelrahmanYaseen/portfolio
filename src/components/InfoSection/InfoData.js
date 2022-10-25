@@ -22,18 +22,23 @@ export const homeObj1 = {
     lightTextDesc: false,
     topLine: 'A bit about me',
     headLine: 'Jack of all trades, master of some.',
-    description: <div>Yaseen, a former valedictorian who's <em>very</em> passionate about:
+    description: <div>Yaseen, a former valedictorian who's passionate about and skilled in:
      <ul style={{'paddingLeft':'20px'}}>
-        <li>Digital Projects Management</li>
-        <li>Blockchain</li>
-        <li>Data - in all its forms</li>
-        <li>Finance</li>
-        <li>Machine Learning and Optimization</li>
+
+    <li><strong>Data Science:</strong> Pandas, Numpy, Dask (for big data), Plotly (For visualization), Dash (For interactive dashboards).</li>
+
+    <li><strong>Web Development:</strong> Python (Flask and Django), Javascript (React).</li>
+
+    <li><strong>Cloud Computing:</strong> AWS - EC2, S3, Lambda.</li>
     </ul>
+
+    <p style={{'marginTop':'10px'}}>Additionally, I'm knowledgable in etherum-based blockchain development (in Solidity), Web scraping and bot-creation (Selenium and beautifulsoup), Algorithmic Trading and technical analysis.</p>
+
      <p style={{'marginTop':'10px'}}>I like to create, innovate and invest my time, effort and money in making sure 
      that technology's potential is being realized.</p>
      <p>My interests extend far beyond the technical aspects of technology to
       include computer ethics, as well as both the psychological and economical impact of technology. </p>
+      <p style={{'marginTop':'15px'}}>Apart from technology, I'm a long term meditator and a practitioner of mindfulness. I love graphic design, photo, video editing and 3D modeling.</p>
      </div>
      ,
     // description: <p>I'm Yaseen, a former valedictorian of the Computer Engineering department <a style={{'color': '#01bf71'}} href="https://www.metu.edu.tr/" target="_blank">@METU</a>. Extremely passionate about technology and computing.<p>Currently I'm doing my Master's degree in Computer Science and Engineering <a style={{'color': '#01bf71'}} href="https://www.polimi.it/" >@Polimi</a></p></p>,
@@ -79,8 +84,8 @@ export const homeObj3 = {
                     And if your project will benefit the humanity in any meaningful way
                     I will make a 50% discount right away. No kidding.
                 </div>,
-    buttonLabel: 'Email me',
-    btnLink:'mailto: abdalrahman.yaseen@gmail.com',
+    buttonLabel: 'Let\'s connect !',
+    btnLink:'https://www.linkedin.com/in/yaseen-it/',
     imgStart : false,
     img: require('../../images/contact-me.svg').default,
     alt:'test',
