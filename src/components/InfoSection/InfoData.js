@@ -1,4 +1,5 @@
 import {awards_data} from './awardsData'
+import { Button } from '../ButtonElement';
 
 const awards_array = Object.values(awards_data) 
 const awards = awards_array.map( item => {
@@ -9,43 +10,50 @@ const awards = awards_array.map( item => {
         <p style = {{'margin-left':'5%'}}>{item.award}</p>
         <br/>
         </div>
-        
 
     )
 })
-
 
 export const homeObj1 = {
     id: 'about',
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
-    topLine: 'A bit about me',
-    headLine: 'Jack of all trades, master of some.',
-    description: <div>Yaseen, a former valedictorian who's <em>very</em> passionate about:
+    topLine: 'About Me',
+    headLine: 'Bridging technical complexity with user-focused solutions.',
+    description: <div>
+     <p>Yaseen, a computer engineer driven by a deep passion for problem-solving and innovation.</p>
+     <p style={{'marginTop':'10px'}}>I find joy in creating solutions that merge technology with real-world impact:
      <ul style={{'paddingLeft':'20px'}}>
-        <li>Digital Projects Management</li>
-        <li>Blockchain</li>
-        <li>Data - in all its forms</li>
-        <li>Finance</li>
-        <li>Machine Learning and Optimization</li>
-    </ul>
-     <p style={{'marginTop':'10px'}}>I like to create, innovate and invest my time, effort and money in making sure 
-     that technology's potential is being realized.</p>
-     <p>My interests extend far beyond the technical aspects of technology to
-      include computer ethics, as well as both the psychological and economical impact of technology. </p>
+        <li>Harnessing data and AI to turn information into insights.</li>
+        <li>Crafting intuitive designs and tools for seamless user experiences.</li>
+        <li>Exploring creative applications of logic and technology.</li>
+     </ul>
+     </p>
+     <p style={{'marginTop':'10px', 'marginBottom':'20px'}}>Beyond the technical realm, I’m deeply interested in the ethical, psychological, and economic implications of technology, aiming to create solutions that not only perform but also resonate with people.</p>
+     <Button
+                href="https://rebel-printer-2fc.notion.site/Portfolio-Yaseen-18148f4104fe80309bafcec013e4ae18?pvs=74"
+                primary={true}
+                dark={false}  
+                big={true}    
+                fontBig={true}
+                target="_blank"
+            >
+                Read More
+            </Button>
      </div>
      ,
-    // description: <p>I'm Yaseen, a former valedictorian of the Computer Engineering department <a style={{'color': '#01bf71'}} href="https://www.metu.edu.tr/" target="_blank">@METU</a>. Extremely passionate about technology and computing.<p>Currently I'm doing my Master's degree in Computer Science and Engineering <a style={{'color': '#01bf71'}} href="https://www.polimi.it/" >@Polimi</a></p></p>,
+
     buttonLabel: null,
-    btnLink:null,
-    imgStart : false,
+    btnLink: null,
+    imgStart: false,
     img: require('../../images/self.svg').default,
-    alt:'test alt',
-    dark:false,
+    alt: 'Profile image',
+    dark: false,
     primary: false,
     darkText: true,
 };
+
 export const homeObj2 = {
     id: 'awards',
     lightBg: true,
@@ -71,7 +79,7 @@ export const homeObj3 = {
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
-    topLine: 'Email me',
+    topLine: 'Contact me',
     headLine: 'Contact',
     description: <div style = {{'align-text':'center', 'width':'100%'}}>
                     I am always happy to put my efforts in a complex task, 
@@ -79,8 +87,8 @@ export const homeObj3 = {
                     And if your project will benefit the humanity in any meaningful way
                     I will make a 50% discount right away. No kidding.
                 </div>,
-    buttonLabel: 'Email me',
-    btnLink:'mailto: abdalrahman.yaseen@gmail.com',
+    buttonLabel: 'Contact me',
+    btnLink:'https://www.linkedin.com/in/yaseen-it/',
     imgStart : false,
     img: require('../../images/contact-me.svg').default,
     alt:'test',
@@ -88,4 +96,5 @@ export const homeObj3 = {
     primary: true,
     darkText: false,
 };
+
 

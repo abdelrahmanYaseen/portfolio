@@ -26,6 +26,7 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headLine, darkT
                                     href={btnLink}
                                     primary = {primary? 1: 0}
                                     dark = {dark? 1: 0}
+                                    target="_blank"
                                  >{buttonLabel}</Button>
                              </BtnWrap>
                              :''

@@ -52,6 +52,7 @@ export const PopupImageWrapper = styled.div`
     ${'' /* background:#f00;  */}
     height:100%;
     overflow:hidden;
+    padding:50px;
 `;
 
 export const PopupImage = styled.img`

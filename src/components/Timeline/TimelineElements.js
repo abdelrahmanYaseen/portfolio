@@ -1,19 +1,6 @@
 let timelineElements = [
     {
-      id:1,
-      short_title:'MSc. Degree',
-      title: "M.Sc. Computer Science and Engineering - Student",
-      location: "Politecnico Di Milano - Milan/Italy",
-      description:
-          "Excelling in Digital Projects Management, High-Tech Enterprenurship, Operations Research, Machine Learning and Data Management.",
-      buttonText: "",
-      date: "September 2019 - present",
-      icon: require('../../images/polimi.png').default,
-      bgcolor: "#eee",
-      link: "http://polimi.it/",
-    },
-    {
-        id:2,
+        id:1,
         title: "Data Modeler - Thesis Work",
         short_title:'Data Modeler',
         location: "Blurcock Logistics - Den Bosch/Netherlands",
@@ -25,7 +12,19 @@ let timelineElements = [
         bgcolor: "#eee",
         link: "http://www.bluerocklogistics.com/bluerocklogistics.com/",
     },
-    
+    {
+      id:2,
+      short_title:'MSc. Degree',
+      title: "M.Sc. Computer Science and Engineering - Student",
+      location: "Politecnico Di Milano - Milan/Italy",
+      description:
+          "Excelling in Digital Projects Management, High-Tech Enterprenurship, Operations Research, Machine Learning and Data Management.",
+      buttonText: "",
+      date: "September 2019 - August 2021",
+      icon: require('../../images/polimi.png').default,
+      bgcolor: "#eee",
+      link: "http://polimi.it/",
+    },
     {
       id: 3,
       title: "Full stack developer - Part Time",
@@ -79,18 +78,7 @@ let timelineElements = [
       icon: require('../../images/metu.png').default,
       bgcolor: "#eee",
       link: "https://www.metu.edu.tr/",
-    },
-    {
-      id: 5,
-      title: "Student",
-      short_title:'Highschool studies',
-      location: "Anin High School - Jenin/Palestine",
-      description:
-        <p>Graduated with a <span style = {{'color' :'#01bf71'}} ><b>CGPA of 97.9%</b></span>, ranked among the <span style = {{'color' :'#01bf71'}} ><b>top 3%</b></span> over the nation.</p>,
-      buttonText: "",
-      date: "2014 -  2015",
-      icon: "school",
-    },
+    }
   ];
   
   export default timelineElements;

@@ -98,7 +98,7 @@ export const Projects_data = {
             
              </div>,
             btnLabel: 'Request the code',
-            btnLink: 'mailto: abdalrahman.yaseen@gmail.com',
+            btnLink: 'https://www.linkedin.com/in/yaseen-it/',
             img: require('../../images/project-instagram-automation-bg.gif').default}
     },
     Project6: {
@@ -122,7 +122,7 @@ export const Projects_data = {
             </div>,
 
             btnLabel: 'Request the code',
-            btnLink: 'mailto: abdalrahman.yaseen@gmail.com',
+            btnLink: 'https://www.linkedin.com/in/yaseen-it/',
             img: require('../../images/project-backtesting-img.gif').default}
     },
     Project7: {

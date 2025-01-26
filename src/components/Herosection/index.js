@@ -11,9 +11,8 @@ const HeroSection = () => {
             <HeroContent>
                 {/* <HeroH1> Howdy !  </HeroH1> */}
                 <HeroP> I'm Yaseen, 
-                 a Computer Engineer, Blockchain Developer 
-                and a Data Modeler.<br/> Please have a seat, 
-                scroll down, and I'll get you a coffee.</HeroP>
+                 a Software Engineer.<br/> Please have a seat, 
+                scroll down, and enjoy.</HeroP>
             </HeroContent>
             
 
